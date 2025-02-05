@@ -4,6 +4,7 @@ A simple calculator built using **HTML, CSS, and JavaScript** that performs basi
 
 ## 📌 Features  
 ✔️ Perform Addition, Subtraction, Multiplication, and Division.
+<br>
 ✔️ Clear button to Reset calculations.
 
 ## 🔧 Technologies Used  
