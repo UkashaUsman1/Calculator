@@ -13,9 +13,9 @@ function calculate(input) {
         display.value = eval(display.value)
     } catch (error) {
         display.value = "Error"
-        if(display.value == "Error"){
-          console.log("h")
-        }
     }
 }
 
+function clearLast() {
+    display.value = display.value.slice(0, -1);
+}
