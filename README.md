@@ -1,11 +1,12 @@
-#JavaScript Calculator
-A simple calculator built using HTML, CSS, and JavaScript that performs basic arithmetic operations. 🚀
+# 🖩 JavaScript Calculator
 
-##📌 Features
-✔️ Perform Addition, Subtraction, Multiplication, and Division.
-✔️ Clear button to reset calculations.
+A simple calculator built using **HTML, CSS, and JavaScript** that performs basic arithmetic operations. 🚀  
 
-##🔧 Technologies Used
-HTML for the structure!
-CSS for styling!
-JavaScript for functionality!
+## 📌 Features  
+✔️ Perform addition, subtraction, multiplication, and division  
+✔️ Clear button to reset calculations   
+
+## 🔧 Technologies Used  
+- **HTML** for the structure  
+- **CSS** for styling  
+- **JavaScript** for functionality  
