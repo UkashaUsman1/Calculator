@@ -1,60 +1,46 @@
 let display = document.querySelector("#display");
 
+let isResultDisplayed = false;
+
 function appendToDisplay(input) {
-  display.value += input;
+  if (isResultDisplayed && !isNaN(input)) {
+    display.value = input;
+    isResultDisplayed = false;
+  } else {
+    display.value += input;
+  }
 }
 
 function clearDisplay() {
   display.value = "";
-  isResultDisplayed = false; // Reset flag
+  isResultDisplayed = false;
 }
-// function clearDisplay(input) {
-//   display.value = "";
-// }
 
 function calculate() {
   try {
-      display.value = eval(display.value); // Calculate result
-      isResultDisplayed = true; // Set flag after showing result
+    display.value = eval(display.value);
+    isResultDisplayed = true;
   } catch (error) {
-      display.value = "Error";
-      isResultDisplayed = true;
+    display.value = "Error";
+    isResultDisplayed = true;
   }
 }
-// function calculate(input) {
-//   try {
-//     display.value = eval(display.value);
-//   } catch (error) {
-//     display.value = "Error";
-//   }
-// }
 
 function clearLast() {
   if (display.value === "Error") {
     display.value = "";
+  } else if (isResultDisplayed) {
+    display.value = ""; 
+    isResultDisplayed = false;
   } else {
     display.value = display.value.slice(0, -1);
   }
 }
 
-function percentage(){
-  display.value = display.value/100
+function percentage() {
+  display.value = display.value / 100;
 }
 
-function sq_rt(){
-  display.value = Math.pow(display.value, 1/2)
+function sq_rt() {
+  display.value = Math.pow(display.value, 1 / 2);
 }
-
-let isResultDisplayed = false; // Flag to check if result is displayed
-
-function appendToDisplay(value) {
-    if (isResultDisplayed && !isNaN(value)) {
-        display.value = value; // Replace display with new number
-        isResultDisplayed = false; // Reset flag
-    } else {
-        display.value += value; // Append as usual
-    }
-}
-
-
-
